@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fa {
+    color: aliceblue;
+    opacity: 50%;
+}
+
+.auto-container {
+    max-width: 1150px;
+    position: relative;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+.end-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.top-container {
+    max-width: 100%;
+    position: relative;
+    height: 400px;
+}
+
+.abuot-container {
+    max-width: 1400px;
+    position: relative;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+/* button style */
+.button {
+    background: none;
+    display: inline-block;
+    letter-spacing: 1px;
+    font-weight: 700;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
+}
+.button:hover{
+    background: #B19777;
+}
+button:hover:before{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+button:hover:after{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+
+/* img effect */
+
+.img {
+    transition: all 0.7s;
+}
+
+.hight {
+    height: 620px;
+}
+
+.top-hight {
+    height: 400px;
+}
+
+/* underline effect */
+.line {
+    text-decoration: none;
+}
+
+.line::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #B19777;
+    transition: width .4s ease-in;
+}
+
+.line:hover::after {
+    width: 100%;
+    
+}
+
+.whiteLine{
+    text-decoration: none;
+}
+.whiteLine::after{
+    content:'';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #FEFEFE;
+    transition: width .4s ease-in;
+}
+
+.whiteLine:hover::after {
+    width: 100%;
+}
+
+
+/* background image */
+.bgImg {
+    background: linear-gradient(to bottom,rgba(39,39,39,0.3),rgba(39,39,39,1)),url(../img/slider/1.1.jpg);
+}
+
+.bgimg-sm{
+    background:url(../img/slider/2.jpg);
+}
